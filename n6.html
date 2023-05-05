@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My CV Website</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color:black;
+		}
+
+		header {
+			background-color: powderblue;
+			color: black;
+			padding: 30px;
+			text-align: center;
+			margin-bottom: 100px;
+			
+		}
+
+		section {
+			margin-bottom: 20px;
+			padding: 10px;
+			background-color:orange;
+			box-shadow: black ;
+		}
+u
+		h2 {
+			font-size: 50px;
+			margin-bottom: 50px;
+		}
+
+		h3 {
+			font-size: 20px;
+			margin-bottom: 100px;
+		}
+
+		p {
+			font-size: 24px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
+
+		table {
+			border-collapse: collapse;
+			margin-bottom: 10px;
+		}
+
+		table td, table th {
+			padding: 5px;
+			border: 1px solid black;
+		}
+
+		ul {
+			margin: 20px;
+			padding: 20px;
+			list-style: 50px;
+			margin-bottom: 20px;
+		}
+
+		li {
+			margin-bottom: 5px;
+		}
+
+		 a {
+			color: pink;
+			text-decoration: white;
+		}
+
+		button {
+			padding: 10px;
+			background-color:violet;
+			color: black;
+			border: 10px;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>IDRISS LEE</h1>
+		<p>Technician</p>
+	</header>
+
+	<section>
+		<h2>PERSONAL DETAILS</h2>
+		<table>
+			<tr>
+				<th>Name</th>
+				<td>Iddi Ally</td>
+			</tr>
+			<tr>
+				<th>Gender</th>
+			    <td>Male</td>
+		  </tr>
+		  <tr>
+			  <th>D/birth</th>
+			  <td>15/01/2001</td>
+
+		  </tr>
+			<tr>
+				<th>Email</th>
+				<td>allyiddi736@gmail.com</td>
+			</tr>
+			<tr>
+				<th>Phone</th>
+				<td>06923333646</td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td>Kigamboni, Dar es salaam</td>
+			</tr>
+			<tr>
+				<th>Website</th>
+				<td><a href="#">daga.github.io</a></td>
+			</tr>
+		</table>
+	</section>
+
+	<section>
+		<h2>Educational Background</h2>
+		<ul>
+			<li>Bachelor of information technology application & management  <br>at state University of zanzibar (2021-2023)</li>
+			<li>Master of Science in Computer Science, ABC University (2022-2026)</li>
+		</ul>
+	</section>
+	
+	<section>
+		<h2>Hobbies</h2>
+		<ul>
+			<li>playing game</li>
+			<li>physical exercise</li>
+			<li>playing music</li>
+			<li>football</li>
+		</ul>
+
+	</section>
+
+	<section>
+		<h2>Working Experience</h2><ul>
+			<li>Web Developer
+</li>
+<li>IT teacher volunteer</li>
+<li>Physics teacher volunteer</li>
+<li>Technician </li>
+<li>Driver</li>
+</ul>
+</section>
+
+<section>
+<header>
+      <h1>CONTACT US</h1>
+    </header>
+
+    <main>
+      <section id="map">
+        <h2>Our Location</h2>
+        <iframe src="<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20023.59770187212!2d-122.4085575942725!3d37.78308629407929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMTInNDguOCJOIDEyMjLCsDE3JzE3LjkiRQ!5e0!3m2!1sen!2sus!4v1652097891235!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section id="contact-form">
+        <h2>CONTACT US</h2>
+        <form onsubmit="return storeFormData()">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+
+      <section id="login-form">
+        <h2>Login to View Contact Information</h2>
+        <form onsubmit="return retrieveFormData()">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <input type="submit" value="Login">
+        </form>
+
+        <div id="contact-info">
+          <h3>Contact Information</h3>
+          <ul id="contact-list"></ul>
+        </div>
+      </section>
+    </main>
+<script src="qn6.js"></script>
+</body>
+</html>
